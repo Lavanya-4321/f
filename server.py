@@ -3,9 +3,6 @@ import util
 
 app = Flask(__name__)
 
-@app.route('/')
-def index():
-    return render_template('index.html')
 
 @app.route('/classify_image', methods=['POST'])
 def classify_image():
